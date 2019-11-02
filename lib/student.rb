@@ -67,5 +67,5 @@ class Student
   sql = "SELECT * FROM students WHERE name = ?"
       DB[:conn].execute(sql, name).map { |row| new_from_db(row) }.first
   
-end
+  end
 end
